@@ -5,8 +5,8 @@
 - MongoDB
 
 ## 1. Modifying Documentation: Update Readme
-- [ ] Check all the TODO Tasks
-- [ ] Delete `TODO` mark when done modifying
+- [x] Check all the TODO Tasks
+- [x] Delete `TODO` mark when done modifying
 
 ## 2. Modifyuing Composer: Update `composer.json`
 Change the following:
@@ -99,21 +99,21 @@ Using the GUI of database you need to formulate your data structure on how you w
 in this demo we need to have a design for our users
 Task: Users can be divided into group, they can login, basic information and role.
 
-- [ ] Design a structure
-- [ ] Create Base Pattern using the tool by simple selecting the database from `Database`
-    - [ ] Select your <database name> ex.: `mydatabase`
-    - [ ] Select `Tables` and look for the `+` sign then click it
-    - [ ] Create Sample code then copy
-    - [ ] Goto your `Explorer`
-    - [ ] Create new file for that specific model ex.: `user.model.sql`
-    - [ ] Add conditional command on your SQL code
-        - [ ] between `CREATE TABLE` and `<table name>` add the following code `IF NOT EXISTS`
+- [x] Design a structure
+- [x] Create Base Pattern using the tool by simple selecting the database from `Database`
+    - [x] Select your <database name> ex.: `mydatabase`
+    - [x] Select `Tables` and look for the `+` sign then click it
+    - [x] Create Sample code then copy
+    - [x] Goto your `Explorer`
+    - [x] Create new file for that specific model ex.: `user.model.sql`
+    - [x] Add conditional command on your SQL code
+        - [x] between `CREATE TABLE` and `<table name>` add the following code `IF NOT EXISTS`
 
 Task:
 Create more tables for the following
-- [ ] Projects
-- [ ] Project ↔ User assignments
-- [ ] Tasks
+- [x] Projects
+- [x] Project ↔ User assignments
+- [x] Tasks
 
 Just Copy the following for the `project_users.model.sql`
 ```sql
