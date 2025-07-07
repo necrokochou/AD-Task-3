@@ -10,7 +10,6 @@
   <h3 align="center">AD Task 3</h3>
 </div>
 <div align="center">
-  Description. To be changed.
 </div>
 
 <br />
@@ -48,8 +47,7 @@
 
 ## Overview
 
-Description of the project in details.
-
+A simple web application demonstrating database connectivity checks using PHP, HTML, and CSS. This project showcases best practices in file organization, naming conventions, and component-based development for educational purposes.
 
 ### Key Components
 
