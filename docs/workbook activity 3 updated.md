@@ -396,12 +396,12 @@ $pdo->exec($sql);
 - [x] visit GUI extension for database for checking and if each contents exist in the tables congrats it works!!! 🎉
 
 ### 12. Making Functionality with database: postgresql
-- [ ] Auth Util
-- [ ] Auth Handler
-- [ ] Reconfig Checkers
-- [ ] Static Data
-- [ ] Components
-- [ ] Layout
-- [ ] Login and logout
-- [ ] Index
-- [ ] Custom Error
+- [x] Auth Util
+- [x] Auth Handler
+- [x] Reconfig Checkers
+- [x] Static Data
+- [x] Components
+- [x] Layout
+- [x] Login and logout
+- [x] Index
+- [x] Custom Error
