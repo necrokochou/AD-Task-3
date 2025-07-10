@@ -1,8 +1,9 @@
+-- Active: 1752155566470@@127.0.0.1@5111@pgdb@public
 CREATE TABLE IF NOT EXISTS public."tasks" (
-    id UUID NOT NULL PRIMARY KEY DEFAULT gen_random_uuid(),
-    name VARCHAR(255) NOT NULL,
-    description TEXT,
-    created_at TIMESTAMP,
-    due_date TIMESTAMP,
-    status VARCHAR(50)
+    id uuid NOT NULL PRIMARY KEY DEFAULT gen_random_uuid(),
+    name varchar(255) NOT NULL,
+    description text,
+    created_at timestamp,
+    due_date timestamp,
+    status varchar(50)
 );

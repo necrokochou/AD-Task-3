@@ -1,19 +1,13 @@
 <?php
+require_once __DIR__ . '/../bootstrap.php';
+require_once UTILS_PATH . '/envSetter.util.php';
 
-$host = "host.docker.internal";
-$port = "5112";
-$username = "user";
-$password = "password";
-$dbname = "mydatabase";
-
-$conn_string = "host=$host port=$port dbname=$dbname user=$username password=$password";
-
-$dbconn = pg_connect($conn_string);
-
-if (!$dbconn) {
-    echo "❌ Connection Failed: ", pg_last_error() . "  <br>";
-    exit();
-} else {
-    echo "✔️ PostgreSQL Connection  <br>";
-    pg_close($dbconn);
+try {
+    $dsn = "pgsql:host={$databases['pgHost']};port={$databases['pgPort']};dbname={$databases['pgDB']}";
+    $pdo = new PDO($dsn, $databases['pgUser'], $databases['pgPassword'], [
+      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]);
+    echo "✅ PostgreSQL Connection\n";
+} catch (Throwable $e) {
+    echo "❌ Connection Failed: " . $e->getMessage() . "\n";
 }

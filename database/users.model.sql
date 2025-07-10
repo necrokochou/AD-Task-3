@@ -1,9 +1,10 @@
+-- Active: 1752155566470@@127.0.0.1@5111@pgdb@public
 CREATE TABLE IF NOT EXISTS public."users" (
-    id UUID NOT NULL PRIMARY KEY DEFAULT gen_random_uuid(),
-    first_name VARCHAR(255) NOT NULL,
-    middle_name VARCHAR(255),
-    last_name VARCHAR(255) NOT NULL,
-    username VARCHAR(255) NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    role VARCHAR(255) NOT NULL
+    id uuid NOT NULL PRIMARY KEY DEFAULT gen_random_uuid(),
+    username varchar(255) NOT NULL,
+    first_name varchar(255) NOT NULL,
+    middle_name varchar(255),
+    last_name varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+    role varchar(255) NOT NULL
 );

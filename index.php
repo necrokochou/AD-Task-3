@@ -1,13 +1,12 @@
 <?php
-require_once UTILS_PATH . '/auth.util.php';
-requireLogin();
+require_once BASE_PATH . '/bootstrap.php';
+require_once LAYOUTS_PATH . '/header.layout.php';
+?>
 
-ob_start();
-?>
-<h2>Dashboard</h2>
-<p>You are logged in as <?= getCurrentUser()['username'] ?>.</p>
-<?php
-$content = ob_get_clean();
-$title = "Dashboard";
-require_once LAYOUTS_PATH . '/base.layout.php';
-?>
+<h2>Welcome to the PHP Auth Demo</h2>
+<p>This is a demo project that shows how login/logout works using PHP and a database.</p>
+<a href="/pages/LoginPage/index.php">
+    <button>Continue to Login</button>
+</a>
+
+<?php require_once LAYOUTS_PATH . '/footer.layout.php'; ?>

@@ -12,6 +12,10 @@ $databases = [
     'pgDB' => $_ENV['PG_DB'],
     'pgUser' => $_ENV['PG_USER'],
     'pgPassword' => $_ENV['PG_PASS'],
-    'mURI' => $_ENV['MONGO_URI'],
-    'mDB' => $_ENV['MONGO_DB'],
+    'mongoURI' => $_ENV['MONGO_URI'],
+    'mongoHost' => $_ENV['MONGO_HOST'],
+    'mongoPort' => $_ENV['MONGO_PORT'],
+    'mongoDB' => $_ENV['MONGO_DB'],
+    'mongoUser' => $_ENV['MONGO_USER'],
+    'mongoPassword' => $_ENV['MONGO_PASS'],
 ];

@@ -4,7 +4,7 @@ services:
       context: .
     container_name: paruparo-service
     ports:
-      - "8080:8000"
+      - "8111:8000"
     develop:
       watch:
         - path: .
@@ -15,35 +15,32 @@ services:
         - path: ./composer.lock
           action: rebuild
     depends_on:
+      - postgresql
       - mongodb
 
   mongodb:
     image: mongo:latest
     container_name: paruparo-mongodb
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: rootPassword
-      MONGO_INITDB_DATABASE: admin
+      MONGO_INITDB_DATABASE: mongodb
+      MONGO_INITDB_ROOT_USERNAME: mongouser
+      MONGO_INITDB_ROOT_PASSWORD: mongopassword
     ports:
       - "27111:27017"
-    volumes:
-      - paruparo-mongodb:/data/db/mongodb
 
   postgresql:
     image: postgres:15
     container_name: paruparo-postgresql
     restart: always
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: mydatabase
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pgpassword
+      POSTGRES_DB: pgdb
     ports:
-      - "5112:5432"
-    volumes:
-      - paruparo-postgresql:/data/db/postgresql
+      - "5111:5432"
 
 volumes:
-  paruparo-mongodb:
-    driver: local
   paruparo-postgresql:
+    driver: local
+  paruparo-mongodb:
     driver: local

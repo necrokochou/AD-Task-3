@@ -10,9 +10,9 @@ define('DUMMIES_PATH', realpath(BASE_PATH . "/staticData/dummies"));
 define('UTILS_PATH', realpath(BASE_PATH . "/utils"));
 define('ERRORS_PATH', realpath(BASE_PATH . "/servers"));
 
-chdir(BASE_PATH);
+// chdir(BASE_PATH);
 
-require 'vendor/autoload.php';
+// require 'vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(BASE_PATH);
-$dotenv->load();
+// $dotenv = Dotenv\Dotenv::createImmutable(BASE_PATH);
+// $dotenv->load();
