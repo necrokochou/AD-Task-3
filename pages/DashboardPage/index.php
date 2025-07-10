@@ -3,7 +3,7 @@ require_once BASE_PATH . '/bootstrap.php';
 session_start();
 
 if (!isset($_SESSION['user'])) {
-    header('Location: ' . PAGES_PATH . '/LoginPage/index.php?error=You must login first.');
+    header("Location: /errors/unauthorized.error.php");
     exit;
 }
 

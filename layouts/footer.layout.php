@@ -1,6 +1,6 @@
     </main>
     <footer>
-        &copy; <?= date('Y') ?> Project System. All rights reserved.
+        &copy; <?= date('Y') ?> necrokochou/paruparo. All rights reserved.
     </footer>
 </body>
 </html>

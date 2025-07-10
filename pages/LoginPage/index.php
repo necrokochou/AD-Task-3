@@ -31,4 +31,4 @@ require_once LAYOUTS_PATH . '/header.layout.php';
 <br>
 <a href="/index.php"><button>Back to Home</button></a>
 
-<?php require_once LAYOUTS_PATH . '/footer.layout.php'; ?>
+<?php require_once LAYOUTS_PATH . '/footer.layout.php';
