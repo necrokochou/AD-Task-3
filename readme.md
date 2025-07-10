@@ -48,10 +48,12 @@
 ## Overview
 
 A simple web application demonstrating database connectivity checks using PHP, HTML, and CSS. This project showcases best practices in file organization, naming conventions, and component-based development for educational purposes.
+Features login and logout of stored accounts in database.
 
 ### Key Components
 
 - Database Connectivity Checking
+- Login/Logout using Database
 
 
 ### Technology
