@@ -127,3 +127,11 @@ AD-ProjectName
 └─ router.php
 ```
 > The following should be renamed: name.css, name.js, name.jpeg/.jpg/.webp/.png, name.component.php(but not the part of the `component.php`), Name.utils.php(but not the part of the `utils.php`)
+
+## Resources
+
+| Title        | Purpose                                                                       | Link          |
+| ------------ | ----------------------------------------------------------------------------- | ------------- |
+| ChatGPT | General AI assistance for planning, learning concepts, and gather ideas. | https://chat.openai.com |
+| Professor's Sample | Used for reference, understanding concepts and their flow. | https://github.com/zyx-0314/hands-on |
+| GitHub Copilot | In-IDE code suggestions and boilerplate generation. | https://github.com/features/copilot |
